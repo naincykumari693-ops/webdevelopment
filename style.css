@@ -1,0 +1,186 @@
+.header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 25px;
+    width: 100%;
+
+
+}
+.logo{
+    margin:0;
+    font-size: 35px;
+
+}
+.logo span:first-child{
+    color: lightcoral;
+}
+.logo span:last-child{
+    color: olivedrab;
+}
+.SelectBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.SelectBox b{
+    display: block;
+    margin-bottom: 5px;
+}
+.SelectBox select{
+    padding: 5px;
+}
+.SearchBox{
+    flex:1;
+}
+.SearchBox input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius: 8px;
+}
+.Login{
+    padding: 10px 18px;
+    background: transparent;
+    color: #222;
+    border:none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cart-btn{
+    padding:12px 18px;
+    background-color: olive;
+    color: white;
+    border:none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.herobanner{
+    width:90%;
+    height: 280px;
+    margin:20 px auto;
+    border-radius: 18px;
+    overflow:hidden;
+}
+.herobanner img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+    
+}
+.products-section{
+    width:90%;
+    margin: 30px auto;
+}
+.products-section h2{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.product-slider{
+    display: flex;
+    gap:15px;
+    overflow-x: auto;
+    padding: 10px 5px 20px;
+    scroll-behavior: smooth;
+}
+.product-card{
+    flex: 0 0 180px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 12px;
+    background: white;
+    box-shadow: 0 2px 8px black;
+}
+.product-card img{
+    width: 100%;
+    height:130px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.product-card h3{
+    font-size:15px;
+    margin-bottom:8px;
+}
+.product-card p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.product-card button{
+    width: 100%;
+    padding: 8px;
+    background-color: olive;
+    color: white;
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+@media(max-width:900px){
+    .header{
+        gap:15px;
+        padding: 12px 15px;
+    }
+    .logo{
+        font-size: 28px;
+    }
+    .SearchBox{
+        flex:1;
+    }
+}
+@media(max-width:768px){
+    .header{
+        flex-wrap: wrap;
+    }
+    .SearchBox{
+        order:5;
+        width: 100%;
+
+    }
+    .SearchBox input{
+        width:100%;
+    }
+}
+@media(max-width:480px){
+    .header{
+        gap:10px;
+        padding: 10px;
+    }
+    .logo{
+        font-size: 12px;
+    }
+    .SelectBox select{
+        font-size: 11px;
+        max-width: 120px;
+    }
+    .Login{
+        padding:8px 10px;
+    }
+    .cart-btn{
+        padding: 8px 10px;
+    }
+}
+@media(max-width:768px){
+    .herobanner{
+        width:95%;
+        height: 200px;
+        
+    }
+}
+@media(max-width:480px){
+    .herobanner{
+        width: 95%;
+        height: 150px;
+        border-radius: 10px;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
